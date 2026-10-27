@@ -1,5 +1,9 @@
 # Operating Systems — Assignment 9
 
+# Roll No. 2403MC04
+
+# Name - Leon Joel
+
 ## Question 1: Printing the Page Table
 
 Implemented the `vmprint()` system call to display the page table of the calling process. It prints the virtual address, physical address, and flags for each valid user page, along with the total number of user pages and page-table pages. Kernel mappings are excluded.
@@ -32,3 +36,6 @@ The algorithms were tested with 3, 4, and 5 frames.
 | 5 | 9 | 55% | 7 | 65% |
 
 **Result:** With three frames, FIFO produced 15 page faults and LRU produced 12, matching the expected values. Both algorithms produced fewer faults when more frames were available for this reference string.
+
+
+**Note:** The test program filenames differ slightly from those specified in the assignment. `testvm.c` and `testlazy.c` are used in place of `pttest.c` and `faulttest.c`, respectively. Their functionality remains the same.
